@@ -1,0 +1,15 @@
+diff --git a/dist/esnext/utilities/tests/price.js b/dist/esnext/utilities/tests/price.js
+index 62adb3bc357b87654ec72cc95e63990c5ce648b4..49427bba680e6e316af0206a07a766ff0ddae11a 100644
+--- a/dist/esnext/utilities/tests/price.js
++++ b/dist/esnext/utilities/tests/price.js
+@@ -1,9 +1,8 @@
+ // eslint-disable-next-line node/no-extraneous-import
+-import faker from 'faker';
+ import { CurrencyCode } from '../../storefront-api-types.js';
+ export function getPrice(price = {}) {
+     return {
+         currencyCode: price.currencyCode ?? CurrencyCode.Cad,
+-        amount: price.amount ?? faker.finance.amount(),
++        amount: price.amount ?? '9.99',
+     };
+ }

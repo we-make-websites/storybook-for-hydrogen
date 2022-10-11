@@ -14,17 +14,29 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "lint-ts": "tsc --noEmit",
     "test": "WATCH=true vitest",
-    "test:ci": "yarn build -t node && vitest run"
+    "test:ci": "yarn build -t node && vitest run",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.3",
     "@shopify/cli": "3.17.0",
     "@shopify/cli-hydrogen": "3.17.0",
     "@shopify/prettier-config": "^1.1.2",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-vite": "0.1.39",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.2",
     "@types/react": "^18.0.14",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.18.0",
     "eslint-plugin-hydrogen": "^0.12.2",
+    "eslint-plugin-storybook": "^0.6.6",
     "playwright": "^1.22.2",
     "postcss": "^8.4.14",
     "postcss-import": "^14.1.0",
@@ -33,6 +45,7 @@
     "tailwindcss": "^3.0.24",
     "typescript": "^4.7.2",
     "vite": "^2.9.13",
+    "vite-tsconfig-paths": "^3.5.1",
     "vitest": "^0.15.2"
   },
   "prettier": "@shopify/prettier-config",
@@ -46,5 +59,9 @@
     "react-use": "^17.4.0",
     "typographic-base": "^1.0.4"
   },
-  "author": "drewgarratt"
+  "author": "drewgarratt",
+  "resolutions": {
+    "@shopify/hydrogen@^1.5.0": "patch:@shopify/hydrogen@npm%3A1.5.0#./.yarn/patches/@shopify-hydrogen-npm-1.5.0-de63948a48.patch",
+    "@shopify/hydrogen@^0.26.0": "patch:@shopify/hydrogen@npm%3A1.5.0#./.yarn/patches/@shopify-hydrogen-npm-1.5.0-de63948a48.patch"
+  }
 }
