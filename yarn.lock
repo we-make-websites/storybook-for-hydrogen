@@ -2797,7 +2797,7 @@ __metadata:
 
 "@shopify/hydrogen@patch:@shopify/hydrogen@npm%3A1.5.0#./.yarn/patches/@shopify-hydrogen-npm-1.5.0-de63948a48.patch::locator=storybook-for-hydrogen%40workspace%3A.":
   version: 1.5.0
-  resolution: "@shopify/hydrogen@patch:@shopify/hydrogen@npm%3A1.5.0#./.yarn/patches/@shopify-hydrogen-npm-1.5.0-de63948a48.patch::version=1.5.0&hash=f74ce7&locator=storybook-for-hydrogen%40workspace%3A."
+  resolution: "@shopify/hydrogen@patch:@shopify/hydrogen@npm%3A1.5.0#./.yarn/patches/@shopify-hydrogen-npm-1.5.0-de63948a48.patch::version=1.5.0&hash=939bd5&locator=storybook-for-hydrogen%40workspace%3A."
   dependencies:
     "@vitejs/plugin-react": ^1.3.0
     "@xstate/fsm": ^2.0.0
@@ -2838,7 +2838,7 @@ __metadata:
       optional: true
     serve-static:
       optional: true
-  checksum: 3421843050b23b8463be34fbce37a32b36c8dfaf8a089cc8cd661997397ed323c87b4b0263e78af2d95e6daf96bcd82c5c7b0f12bd9412b13ebe974c8b27cacc
+  checksum: 55abebd68a08b7b19397e4534f2bc11a7572d67756f26c68cd9e74b8772016a021824e4e00c5224154ec6ff930d90474882e559f6ea4304255427aa5987e9708
   languageName: node
   linkType: hard
 
@@ -9744,6 +9744,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"faker@npm:^5.5.3":
+  version: 5.5.3
+  resolution: "faker@npm:5.5.3"
+  checksum: 684fd64c8d3897e54248f95b4f6319f75d97691b8500cd13adf4af2c28f9204f766c1d1aaa6b41338f0beaaa87256c3132f8708a1a8f189d122b92f6b98081c3
+  languageName: node
+  linkType: hard
+
 "fast-deep-equal@npm:^3.1.1, fast-deep-equal@npm:^3.1.3":
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
@@ -13504,16 +13511,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minipass@npm:^3.0.0, minipass@npm:^3.1.1":
-  version: 3.3.4
-  resolution: "minipass@npm:3.3.4"
-  dependencies:
-    yallist: ^4.0.0
-  checksum: 5d95a7738c54852ba78d484141e850c792e062666a2d0c681a5ac1021275beb7e1acb077e59f9523ff1defb80901aea4e30fac10ded9a20a25d819a42916ef1b
-  languageName: node
-  linkType: hard
-
-"minipass@npm:^3.1.6":
+"minipass@npm:^3.0.0, minipass@npm:^3.1.1, minipass@npm:^3.1.6":
   version: 3.3.5
   resolution: "minipass@npm:3.3.5"
   dependencies:
@@ -17519,6 +17517,7 @@ __metadata:
     eslint: ^8.18.0
     eslint-plugin-hydrogen: ^0.12.2
     eslint-plugin-storybook: ^0.6.6
+    faker: ^5.5.3
     graphql-tag: ^2.12.6
     playwright: ^1.22.2
     postcss: ^8.4.14
@@ -17855,13 +17854,13 @@ __metadata:
   linkType: hard
 
 "sveltedoc-parser@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "sveltedoc-parser@npm:4.2.1"
+  version: 4.3.1
+  resolution: "sveltedoc-parser@npm:4.3.1"
   dependencies:
     eslint: 8.4.1
     espree: 9.2.0
     htmlparser2-svelte: 4.1.0
-  checksum: 26929081b32474df5db3ddde6d12c6732f6f40bfa353da6b988ca9d15260ee5234ba4a2e2294e5d6da741522905b8ec6ff0058d502ab88f5e76f92231ef98527
+  checksum: c0260161c80d1c5ec52808e98f82def379746020c4ffad6e462fec3cd299a3435430eb55a8fe4265884975575bd2aa74f9eda11617864e8aa5a4ca585b57dc51
   languageName: node
   linkType: hard
 
