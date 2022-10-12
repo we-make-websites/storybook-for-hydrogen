@@ -4155,7 +4155,7 @@ index 0000000000000000000000000000000000000000..1193411b0dadd4222630dbfc7bfad48a
 +    /** The fragment used to query the cart object for all queries and mutations. */
 +    cartFragment: string;
 +}
-+export declare type State = 
++export declare type State =
 +/** A cart has not been created yet, or an error occurred when a cart was attempting to be created or fetched. */
 +{
 +    status: 'uninitialized';
@@ -5024,9 +5024,9 @@ index 0000000000000000000000000000000000000000..0df688e6763ebb735b8d057a5b3af1fb
 +            .join(', ');
 +    }
 +    /* eslint-disable hydrogen/prefer-image-component */
-+    return (React.createElement("img", { ...rest, src: finalSrc, 
++    return (React.createElement("img", { ...rest, src: finalSrc,
 +        // @ts-expect-error TS doesn't understand that it could exist
-+        width: loaderOptions?.width ?? width, 
++        width: loaderOptions?.width ?? width,
 +        // @ts-expect-error TS doesn't understand that it could exist
 +        height: loaderOptions?.height ?? height, alt: alt ?? '', loading: loading ?? 'lazy', srcSet: finalSrcset, decoding: decoding }));
 +    /* eslint-enable hydrogen/prefer-image-component */
@@ -7327,7 +7327,7 @@ index 0000000000000000000000000000000000000000..130dfe4551a2757bbef045c41c2c87d8
 +            console.warn('Could not parse client configuration in browser', error.message);
 +        }
 +    }
-+    const RootComponent = 
++    const RootComponent =
 +    // Default to StrictMode on, unless explicitly turned off
 +    config.strictMode !== false ? StrictMode : Fragment;
 +    // Fixes hydration in `useId`: https://github.com/Shopify/hydrogen/issues/1589
@@ -7625,7 +7625,7 @@ index 0000000000000000000000000000000000000000..0a8c1f8f4de5280d56d274c508ffcf0f
 +function assembleHtml({ ssrHtml, rscPayload, request, template, }) {
 +    let html = applyHtmlHead(ssrHtml, request.ctx.head, template);
 +    if (rscPayload) {
-+        html = html.replace('</body>', 
++        html = html.replace('</body>',
 +        // This must be a function to avoid replacing
 +        // special patterns like `$1` in `String.replace`.
 +        () => flightContainer(rscPayload) + '</body>');
@@ -9603,7 +9603,7 @@ index 0000000000000000000000000000000000000000..60262933ea0162ccd6ab9dbebd8b3f7a
 +        this.options = options;
 +        this.options = {
 +            ...this.options,
-+            expires: 
++            expires:
 +            // maxAge takes precedence
 +            typeof options.maxAge !== 'undefined'
 +                ? new Date(Date.now() + options.maxAge * 1000)
@@ -9676,7 +9676,7 @@ index 0000000000000000000000000000000000000000..8b8fbc403280daccec314ac2afa225bc
 + */
 +export const CookieSessionStorage = function (
 +/** The name of the cookie stored in the browser. */
-+name, 
++name,
 +/** An optional object to configure [how the cookie is persisted in the browser](https://shopify.dev/api/hydrogen/components/framework/cookie#cookie-options). */
 +options) {
 +    return function () {
@@ -10297,9 +10297,9 @@ index 0000000000000000000000000000000000000000..2b05611f6e1a6e85c55d0ff47b242c8e
 + */
 +export const FileSessionStorage = function (
 +/** The name of the cookie stored in the browser. */
-+name, 
++name,
 +/** A directory to store the session files in. Each session is stored in a separate file on the file system. */
-+dir, 
++dir,
 +/** An optional object to configure [how the cookie is persisted in the browser](https://shopify.dev/api/hydrogen/components/framework/cookie#cookie-options). */
 +cookieOptions) {
 +    return function (log) {
@@ -11057,7 +11057,7 @@ index 0000000000000000000000000000000000000000..cda66170a498d0e2410e25a4432c4789
 + */
 +export const MemorySessionStorage = function (
 +/** The name of the cookie stored in the browser. */
-+name, 
++name,
 +/** An optional object to configure [how the cookie is persisted in the browser](https://shopify.dev/api/hydrogen/components/framework/cookie#cookie-options). */
 +options) {
 +    const sessions = new Map();
@@ -11738,7 +11738,7 @@ index 0000000000000000000000000000000000000000..3350c180c95ee9567b421c64431be9f2
 --- /dev/null
 +++ b/dist/dist/esnext/foundation/ServerStateProvider/ServerStateProvider.js
 @@ -0,0 +1,59 @@
-+import React, { createContext, useMemo, useCallback, 
++import React, { createContext, useMemo, useCallback,
 +// @ts-ignore
 +useTransition, } from 'react';
 +const PRIVATE_PROPS = ['request', 'response'];
@@ -11844,12 +11844,12 @@ index 0000000000000000000000000000000000000000..a73dadc85df680f29304e02314d7c362
 + * If you're using the Hydrogen framework, you don't need to add this provider
 + * because it's automatically wrapped around your app in `renderHydrogen()`.
 + */
-+export declare function ShopifyProvider({ 
++export declare function ShopifyProvider({
 +/**
 + * Shopify connection information. Defaults to
 + * [the `shopify` property in the `hydrogen.config.js` file](https://shopify.dev/custom-storefronts/hydrogen/framework/hydrogen-config).
 + */
-+shopifyConfig, countryCode, languageCode, 
++shopifyConfig, countryCode, languageCode,
 +/** Any `ReactNode` elements. */
 +children, }: ShopifyProviderProps): JSX.Element;
 +export declare function getLocalizationContextValue(defaultLanguageCode: `${LanguageCode}`, defaultCountryCode: `${CountryCode}`, languageCode?: `${LanguageCode}`, countryCode?: `${CountryCode}`): LocalizationContextValue;
@@ -11903,12 +11903,12 @@ index 0000000000000000000000000000000000000000..bd5fa88f7b910f4e3f18c7c30b20b3d5
 + * If you're using the Hydrogen framework, you don't need to add this provider
 + * because it's automatically wrapped around your app in `renderHydrogen()`.
 + */
-+export function ShopifyProvider({ 
++export function ShopifyProvider({
 +/**
 + * Shopify connection information. Defaults to
 + * [the `shopify` property in the `hydrogen.config.js` file](https://shopify.dev/custom-storefronts/hydrogen/framework/hydrogen-config).
 + */
-+shopifyConfig, countryCode, languageCode, 
++shopifyConfig, countryCode, languageCode,
 +/** Any `ReactNode` elements. */
 +children, }) {
 +    const request = useServerRequest();
@@ -12528,9 +12528,9 @@ index 0000000000000000000000000000000000000000..461c9fac5174e1469971176cca29a637
 + */
 +export declare function useQuery<T>(
 +/** A string or array to uniquely identify the current query. */
-+key: QueryKey, 
++key: QueryKey,
 +/** An asynchronous query function like `fetch` which returns data. */
-+queryFn: () => Promise<T>, 
++queryFn: () => Promise<T>,
 +/** The options to manage the cache behavior of the sub-request. */
 +queryOptions?: HydrogenUseQueryOptions): {
 +    data?: undefined;
@@ -12560,9 +12560,9 @@ index 0000000000000000000000000000000000000000..a76b6b1980a6acb183fd2cc6fdad0ce6
 + */
 +export function useQuery(
 +/** A string or array to uniquely identify the current query. */
-+key, 
++key,
 +/** An asynchronous query function like `fetch` which returns data. */
-+queryFn, 
++queryFn,
 +/** The options to manage the cache behavior of the sub-request. */
 +queryOptions) {
 +    const request = useServerRequest();
