@@ -1,12 +1,10 @@
-# Hydrogen Demo Store
+# Hydrogen Demo Store - Storybook for Hydrogen
 
 Hydrogen is a React framework and SDK that you can use to build fast and dynamic Shopify custom storefronts.
 
 [Check out the docs](https://shopify.dev/custom-storefronts/hydrogen)
 
-[Run this template in JavaScript on StackBlitz](https://stackblitz.com/github/Shopify/hydrogen/tree/dist/templates/demo-store-js?file=package.json)
-
-[Run this template in TypeScript on StackBlitz](https://stackblitz.com/github/Shopify/hydrogen/tree/dist/templates/demo-store-ts?file=package.json)
+[Run this storybook demo on StackBlitz](https://stackblitz.com/github/we-make-websites/storybook-for-hydrogen?file=src%2Fcomponents%2Fcards%2FProductCard.stories.tsx)
 
 ## Getting started
 
